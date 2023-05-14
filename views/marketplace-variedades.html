@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Variedades | Savilla SAS</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Prompt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/marketplace.css">
+    <link rel="shortcut icon" href="../img/ImagenesGeneral/Log BIC1-min.png">
+  </head>
+  <body class="fondo">
+    <header>
+        <!--Navegador-->
+        <nav class="navbar fixed-top detalles rounded-bottom-4 text-secondary">
+          <div class="container-fluid">
+            <li class="nav-item"></li>
+              <a class="nav-link" href="../index.html"><img src="../img/ImagenesGeneral/Log BIC1-min.png" alt="" width="60" height="40"> R. SAVILLA SAS BIC </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../views/recoleccion.html">RECOLECCCION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../views/marketplace-muebles.html">PRODUCTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../views/contacto.html">ACERCA DE NOSOTROS</a>
+            </li>
+            <button class="navbar-toggler bg-light-subtle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar " aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <form class="d-flex mt-3" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body ">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../views/recoleccion.html">RECOLECCCION</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../views/marketplace-muebles.html">PRODUCTOS</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      NUESTRO BLOG
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../views/blog.html">VISTA GENERAL</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="Aprende.html">APRENDE A RECICLAR</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="Ultimamente.html">QUE HEMOS HECHO ULTIMAMENTE</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      ACERCA DE NOSOTROS
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../views/QuienesSomos.html">QUIENES SOMOS</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="../views/Historia.html">NUESTRA HISTORIA E IMPACTO</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="../views/MisionVision.html">MISION Y VISION</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="../views/ubicacion.html">UBICACION</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="../views/contacto.html">CONTACTO</a></li>
+                    </ul>
+                  </li>
+                  <li class="Menufin">
+                    Hecho por <img src="../img/logos/JDJLOGO-min.png" alt="" width="50px" height="50px">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+          <script>
+            const navEl = document.querySelector('.navbar');
+          
+            window.addEventListener('scroll', () => {
+            
+                if (window.scrollY >= 56){
+                    navEl.classList.add('navbar-scrolled')
+                   
+                } else if (window.scrollY < 56)
+                {
+                    navEl.classList.remove('navbar-scrolled')
+                }
+            });
+          </script>
+
+    </header>
+    <script src="../javascript/color.js"></script>
+    <div class="list-group sideButtons">
+      <button id="gpill" class="list-group-item" target="_blank" onclick="document.getElementById('contenido').style.fontSize='1.4em'">A</button>
+      <button id="gpill" class="list-group-item" target="_blank" onclick="document.getElementById('contenido').style.fontSize='1em'">a</button>
+      <button id="gpill" class="btncolor list-group-item" target="_blank" onclick="myFunction()"><img src="../img/logos/brillo-y-contraste-minblanco-min.png" alt="" class="" width="15" onclick="white()"></button>
+  </div>
+    <!--Container y principal-->
+    <div class="container" id="contenido">
+        <main>
+
+          <div class="row p-5 mt-5 text-center ">
+            <div class="col-sm-12 col-md-6 col-lg-4 m-auto text-center">
+              <h2>NUESTROS PRODUCTOS</h2>
+              <h3>|VARIEDADES|</h3>
+            </div>
+          </div>
+
+          <div class="row text-center m-auto texto">
+            <div class="col-sm-12 col-md-6 col-lg-4 m-auto text-center">
+              <a class="text-decoration-none textgeneral CambioColor" href="marketplace-muebles.html">MUEBLES</a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 m-auto text-center CambioColor">
+              <p>|</p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 m-auto text-center">
+              <a class="text-decoration-none textgeneral CambioColor" href="marketplace-variedades.html">VARIEDADES</a>
+            </div>
+          </div>
+
+          <div class="row m-3 cuerpo rounded-4 CambioColor1">
+            <div class="col-sm-12 col-md-6 col-lg-4 p-5">
+              <img src="../img/ImagenesMarket/Cajas-min.jpeg" class="rounded-3 w-100" alt="" height="250">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 p-5">
+              <h2 class="text-center pt-5">CAJAS</h2>
+              <p class="pt-3">
+                Fabricamos lindas cajas donde puedas guardar tus accesorios y objetos. Si tienes dudas con respecto a nuestros productos puedes enviarnos tu pregunta en la seccion de consultas
+              </p>
+            </div>
+            <div class="col-2 m-auto">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-outline-success font-monospace" data-bs-toggle="modal" data-bs-target="#ComprarCaja">Comprar <img src="../img/logos/carro-de-la-carretilla-min.png" alt="" width="20px" height="20px">
+              </button>
+                 <br>
+                 <br>
+              <button type="button" class="btn btn-outline-info font-monospace" data-bs-toggle="modal" data-bs-target="#ModalConsulta">Consulta <img src="../img/logos/boton-de-informacion-min.png" alt="" width="20px" height="20px"> </button>
+            </div>
+          </div>
+
+          <hr>
+
+
+          <div class="row m-3 cuerpo rounded-4 CambioColor1">
+            <div class="col-sm-12 col-md-6 col-lg-4 p-5">
+              <img src="../img/ImagenesMarket/Cajones-min.jpeg" class="rounded-3 w-100" alt="" height="250">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 p-5">
+              <h2 class="text-center pt-5">CAJONES</h2>
+              <p class="pt-3">
+                Fabricamos fabulosos cajones de los materiales que nos entregues, en los que puedas guardar tus cosas. Si tienes dudas con respecto a nuestros productos puedes enviarnos tu pregunta en la seccion de consultas
+              </p>
+            </div>
+            <div class="col-2 m-auto">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-outline-success font-monospace" data-bs-toggle="modal" data-bs-target="#ComprarCajones">Comprar <img src="../img/logos/carro-de-la-carretilla-min.png" alt="" width="20px" height="20px">
+              </button>
+                 <br>
+                 <br>
+              <button type="button" class="btn btn-outline-info font-monospace" data-bs-toggle="modal" data-bs-target="#ModalConsulta">Consulta <img src="../img/logos/boton-de-informacion-min.png" alt="" width="20px" height="20px"> </button>
+            </div>
+          </div>
+          
+          <hr>
+
+          <div class="row m-3 cuerpo rounded-4 CambioColor1">
+            <div class="col-sm-12 col-md-6 col-lg-4 p-5">
+              <img src="../img/ImagenesMarket/Espejos-min.jpeg" class="rounded-3 w-100" alt="" height="250">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 p-5">
+              <h2 class="text-center pt-5">ESPEJOS</h2>
+              <p class="pt-3">
+                Con las cosas que nos haces entrega fabricamos increibles espejos, que puedan decorar tu habitacion o baños. Si tienes dudas con respecto a nuestros productos puedes enviarnos tu pregunta en la seccion de consultas
+              </p>
+            </div>
+            <div class="col-2 m-auto">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-outline-success font-monospace" data-bs-toggle="modal" data-bs-target="#ComprarEspejos">Comprar <img src="../img/logos/carro-de-la-carretilla-min.png" alt="" width="20px" height="20px">
+              </button>
+                 <br>
+                 <br>
+              <button type="button" class="btn btn-outline-info font-monospace" data-bs-toggle="modal" data-bs-target="#ModalConsulta">Consulta <img src="../img/logos/boton-de-informacion-min.png" alt="" width="20px" height="20px"> </button>
+            </div>
+           
+          </div>
+
+          <hr>
+          
+          <div class="row m-3 cuerpo rounded-4 CambioColor1">
+            <div class="col-sm-12 col-md-6 col-lg-4 p-5">
+              <img src="../img/ImagenesMarket/Mesas-min.jpeg" class="rounded-3 w-100" alt="" height="250">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 p-5">
+              <h2 class="text-center pt-5">MESAS</h2>
+              <p class="pt-3">
+                Fabricamos mesas de todos los tamaños, que te permitan tener un soporte para tus cosas. Si tienes dudas con respecto a nuestros productos puedes enviarnos tu pregunta en la seccion de consultas
+              </p>
+            </div>
+            <div class="col-2 m-auto">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-outline-success font-monospace" data-bs-toggle="modal" data-bs-target="#ComprarMesas">Comprar <img src="../img/logos/carro-de-la-carretilla-min.png" alt="" width="20px" height="20px">
+              </button>
+                 <br>
+                 <br>
+              <button type="button" class="btn btn-outline-info font-monospace" data-bs-toggle="modal" data-bs-target="#ModalConsulta">Consulta <img src="../img/logos/boton-de-informacion-min.png" alt="" width="20px" height="20px"> </button>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row m-3 cuerpo rounded-4 CambioColor1">
+            <div class="col-sm-12 col-md-6 col-lg-4 p-5">
+              <img src="../img/ImagenesMarket/Vasos-min.jpeg" class="rounded-3 w-100" alt="" height="250">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 p-5">
+              <h2 class="text-center pt-5">VASOS</h2>
+              <p class="pt-3">
+                Fabricamos increibles vasos artesanales, de materiales reciclabes para tu cocina. Si tienes dudas con respecto a nuestros productos puedes enviarnos tu pregunta en la seccion de consultas
+              </p>
+            </div>
+            <div class="col-2 m-auto">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-outline-success font-monospace" data-bs-toggle="modal" data-bs-target="#ComprarVasos">Comprar <img src="../img/logos/carro-de-la-carretilla-min.png" alt="" width="20px" height="20px">
+              </button>
+                 <br>
+                 <br>
+              <button type="button" class="btn btn-outline-info font-monospace" data-bs-toggle="modal" data-bs-target="#ModalConsulta">Consulta <img src="../img/logos/boton-de-informacion-min.png" alt="" width="20px" height="20px"> </button>
+            </div>
+          </div>
+          
+
+        </main>
+    </div>
+
+    <!-- Mensaje de consulta -->
+    <div class="modal fade" id="ModalConsulta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content CambioColor1">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Consulta</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-center fw-bold">¿Tienes alguna duda sobre nuestro producto y quieres contactarnos?</p>
+             <p>No te preocupes, ¡llena este formulario de abajo y te responderemos lo mas
+              rapido posible!</p>
+              <hr>
+              <form>
+                <!-- Nombre y apellido -->
+                <div class="row mb-4">
+                  <div class="col">
+                    <div class="form-outline">
+                      <label class="form-label" for="form6Example1">Nombre</label>
+                      <input type="text" id="form6Example1" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-outline">
+                      <label class="form-label" for="form6Example2">Apellido</label>
+                      <input type="text" id="form6Example2" class="form-control" />
+              
+                    </div>
+                  </div>
+                </div>              
+                <!-- El email -->
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form4Example2">Correo electronico</label>
+                  <input type="email" id="form4Example2" class="form-control" />
+                  <div id="emailHelp" class="form-text">No compartiremos su correo con nadie.</div>
+                </div>
+              
+                <!-- Message input -->
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form4Example3">Escribanos su duda</label>
+                  <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                </div>
+              
+              </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn btn-primary">Enviar consulta</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Mensaje de compra caja-->
+    <div class="modal fade" id="ComprarCaja" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content CambioColor1">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Realice su compra</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              
+              <div class="col">
+                <img src="../img/ImagenesMarket/Cajas-min.jpeg" class="rounded-4" alt="" width="200px" height="200px">
+              </div>
+              <div class="col">
+                <p class="text-center">¿Cuanto va comprar?</p>
+                <label class="form-label" for="typeNumber" >Ingrese su stock</label>
+                <input type="number" id="typeNumber" class="form-control" min="1" max="10" />
+                <hr>
+                <p class="text-center">Precio: 0$</p>
+                <button type="button" class="btn btn-success mx-5">Comprar<img src="../img/logos/carro-de-la-carretilla-min.png" alt="" width="20px" height="20px"></button>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Mensaje de compra cajones -->
+    <div class="modal fade" id="ComprarCajones" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content CambioColor1">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Realice su compra</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              
+              <div class="col">
+                <img src="../img/ImagenesMarket/Cajones-min.jpeg" class="rounded-4" alt="" width="200px" height="200px">
+              </div>
+              <div class="col">
+                <p class="text-center">¿Cuanto va comprar?</p>
+                <label class="form-label" for="typeNumber" >Ingrese su stock</label>
+                <input type="number" id="typeNumber" class="form-control" min="1" max="10" />
+                <hr>
+                <p class="text-center">Precio: 0$</p>
+                <button type="button" class="btn btn-success mx-5">Comprar<img src="../img/logos/carro-de-la-carretilla-min.png" alt="" width="20px" height="20px"></button>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Mensaje de compra espejos-->
+    <div class="modal fade" id="ComprarEspejos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content CambioColor1">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Realice su compra</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              
+              <div class="col">
+                <img src="../img/ImagenesMarket/Espejos-min.jpeg" class="rounded-4" alt="" width="200px" height="200px">
+              </div>
+              <div class="col">
+                <p class="text-center">¿Cuanto va comprar?</p>
+                <label class="form-label" for="typeNumber" >Ingrese su stock</label>
+                <input type="number" id="typeNumber" class="form-control" min="1" max="10" />
+                <hr>
+                <p class="text-center">Precio: 0$</p>
+                <button type="button" class="btn btn-success mx-5">Comprar<img src="../img/logos/carro-de-la-carretilla-min.png" alt="" width="20px" height="20px"></button>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Mensaje de compra mesitas-->
+    <div class="modal fade" id="ComprarMesas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content CambioColor1">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Realice su compra</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                
+                <div class="col">
+                  <img src="../img/ImagenesMarket/Mesas-min.jpeg" class="rounded-4" alt="" width="200px" height="200px">
+                </div>
+                <div class="col">
+                  <p class="text-center">¿Cuanto va comprar?</p>
+                  <label class="form-label" for="typeNumber" >Ingrese su stock</label>
+                  <input type="number" id="typeNumber" class="form-control" min="1" max="10" />
+                  <hr>
+                  <p class="text-center">Precio: 0$</p>
+                  <button type="button" class="btn btn-success mx-5">Comprar<img src="../img/logos/carro-de-la-carretilla-min.png" alt="" width="20px" height="20px"></button>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Mensaje de compra vasos-->
+    <div class="modal fade" id="ComprarVasos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content CambioColor1">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Realice su compra</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                
+                <div class="col">
+                  <img src="../img/ImagenesMarket/Vasos-min.jpeg" class="rounded-4" alt="" width="200px" height="200px">
+                </div>
+                <div class="col">
+                  <p class="text-center">¿Cuanto va comprar?</p>
+                  <label class="form-label" for="typeNumber" >Ingrese su stock</label>
+                  <input type="number" id="typeNumber" class="form-control" min="1" max="10" />
+                  <hr>
+                  <p class="text-center">Precio: 0$</p>
+                  <button type="button" class="btn btn-success mx-5">Comprar<img src="../img/logos/carro-de-la-carretilla-min.png" alt="" width="20px" height="20px"></button>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Mensaje de no hay stock -->
+    <div class="modal fade" id="NoHayStock" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content CambioColor1">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Sin stock</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Actualmente no tenemos stock de este producto, puede contactarnos por medio de consulta y nosotros le haremos saber
+              cuando llegue el producto que esperaba, disculpeno los inconvenientes
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Footer-->
+    <footer class="footer mt-5 rounded-top-3 pt-3 pb-3">
+      <div class="container-fluid">
+          <div class="row text-center pt-3">
+              <div class="col-sm-12 col-md-6 col-lg-2">
+                  <a href="https://www.facebook.com/RSavillaSASBIC"><img src="../img/logos/facebook-min.png" class="img-fluid" alt="..." width="80" height="100"></a> 
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-2">
+                <a href="https://www.instagram.com/r.savillasas/"><img src="../img/logos/instagram-min.png" class="img-fluid" alt="..." width="80" height="100"></a> 
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-2">
+                <a href="https://www.linkedin.com/404/"><img src="../img/logos/linkedin-min.png" class="img-fluid" alt="..."width="80" height="100"> </a> 
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                  <p>
+                      Medios de contacto <br> 
+                      <img src="../img/logos/logotipo-de-gmail-min.png" alt="img-fluid" width="20" height="20"> reciclajesavilla@hotmail.com<br>
+                      <img src="../img/logos/llamada-telefonica-min.png" alt="img-fluid" width="20" height="20"> +57 3508382046
+                  </p>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                  <p>
+                      Nuestras Sedes <br>
+                      Patio Bonito Cra 86B # 42-06 Sur <br>
+                  </p>
+              </div>
+          </div>
+
+        </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+  <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+/*Linea de tiempo*/
+
+.carousel{
+    position:relative;
+}
+
+ .carousel-indicators{
+    top:50px;
+    width: 75%;
+    margin-left: 14%;
+    position: static;
+    margin-bottom: 40px;
+ }
+ 
+ .experience-slide-one {
+    padding: 0px 50px;
+ }
+
+ .carousel-indicators button{
+    text-indent: 0!important;
+    background: 0 0;
+    border: none;
+    margin: 0!important;
+    position: relative;
+    width: 25%!important;
+  
+ }
+
+ .carousel-indicators button:before{
+    position:absolute;
+    content:"";
+    border-top: solid #000000;
+    width:100%;
+    left:0;
+ }
+
+ .carousel-indicators button h4{
+    margin-top: -41px;
+    position: absolute;
+    left:54%;
+    transform: translateX(-50%);
+ }
+
+ 
+
+ .carousel-indicators button.active h4{
+    color: #2ecc71;
+    
+ }
+
+
+ /*otros*/
+
+ .objetivos{
+    background-color: white;
+ }

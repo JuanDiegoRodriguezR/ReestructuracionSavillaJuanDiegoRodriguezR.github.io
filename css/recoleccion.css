@@ -1,0 +1,67 @@
+
+*{
+    font-family: 'Alkatra', cursive;
+    font-family: 'Prompt', sans-serif;
+}
+
+/*este es para el menu*/
+
+.carrousel{
+    filter: brightness(0.3);
+}
+.nav-item{
+    list-style-type: none;
+}
+.navbar{
+    transition: all 0.2s;
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+.navbar-scrolled{
+    background-color: white;
+    opacity:0.8;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    color:black;
+}
+
+
+.bannerini{ 
+    text-align: center;
+    position: absolute;
+    bottom: 300px;
+    padding-left: 4%;
+    font-size: 50px;
+    color: white;   
+}
+
+.carruselacomodado
+{
+    text-align: center;
+    padding-left: 15%;
+}
+
+.textoacomodado{
+
+   padding-left: 35%;
+}
+
+/*Este es texto de slider*/
+
+.fw-bold{
+    color: green;
+}
+
+/*Este es texto de tarjetas*/
+
+.colorgeneral{
+    background-color: #EAEAEA;
+}
+
+
+.card-img-top{
+    width: 150px;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+

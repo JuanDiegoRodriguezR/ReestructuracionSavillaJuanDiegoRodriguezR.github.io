@@ -1,0 +1,26 @@
+.navegacion
+{
+    color:black
+}
+
+.texto{
+    color: black;
+}
+
+.textgeneral{
+color: black;
+}
+
+.textgeneral:hover{
+
+    cursor: pointer;
+    color: green;
+}
+.cuerpo
+{
+    background-color: #E8E0DE;
+}
+
+.textpoint{
+    padding-left: 3%;
+}

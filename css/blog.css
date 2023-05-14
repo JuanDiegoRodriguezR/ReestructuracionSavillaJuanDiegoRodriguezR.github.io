@@ -1,0 +1,12 @@
+
+.car-blog-col-1:hover{
+    transform: scale(1.02);
+}
+
+.car-blog-col-2:hover{
+    transform: scale(1.02);
+}
+  
+.fa:hover {
+   color: darkblue;
+}

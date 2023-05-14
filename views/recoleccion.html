@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recoleccion | Savilla SAS</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Prompt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/marketplace.css">
+    <link rel="stylesheet" href="../css/recoleccion.css">
+    <link rel="shortcut icon" href="../img/ImagenesGeneral/Log BIC1-min.png">
+  </head>
+  <body class="fondo">
+    <header>
+        <!--Navegador-->
+        <nav class="navbar fixed-top detalles rounded-bottom-4 text-secondary">
+          <div class="container-fluid">
+            <li class="nav-item"></li>
+              <a class="nav-link" href="../index.html"><img src="../img/ImagenesGeneral/Log BIC1-min.png" alt="" width="60" height="40"> R. SAVILLA SAS BIC </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../views/recoleccion.html">RECOLECCCION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../views/marketplace-muebles.html">PRODUCTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../views/contacto.html">ACERCA DE NOSOTROS</a>
+            </li>
+            <button class="navbar-toggler bg-light-subtle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar " aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <form class="d-flex mt-3" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body ">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../views/recoleccion.html">RECOLECCCION</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../views/marketplace-muebles.html">PRODUCTOS</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      NUESTRO BLOG
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../views/blog.html">VISTA GENERAL</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="Aprende.html">APRENDE A RECICLAR</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="Ultimamente.html">QUE HEMOS HECHO ULTIMAMENTE</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      ACERCA DE NOSOTROS
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../views/QuienesSomos.html">QUIENES SOMOS</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="../views/Historia.html">NUESTRA HISTORIA E IMPACTO</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="../views/MisionVision.html">MISION Y VISION</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="../views/ubicacion.html">UBICACION</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="../views/contacto.html">CONTACTO</a></li>
+                    </ul>
+                  </li>
+                  <li class="Menufin">
+                    Hecho por grupo JDJ
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+          <script>
+            const navEl = document.querySelector('.navbar');
+          
+            window.addEventListener('scroll', () => {
+            
+                if (window.scrollY >= 56){
+                    navEl.classList.add('navbar-scrolled')
+                   
+                } else if (window.scrollY < 56)
+                {
+                    navEl.classList.remove('navbar-scrolled')
+                }
+            });
+          </script>
+
+    </header>
+    <script src="../javascript/color.js"></script>
+    <div class="list-group sideButtons">
+      <button id="gpill" class="list-group-item" target="_blank" onclick="document.getElementById('contenido').style.fontSize='1.4em'">A</button>
+      <button id="gpill" class="list-group-item" target="_blank" onclick="document.getElementById('contenido').style.fontSize='1em'">a</button>
+      <button id="gpill" class="btncolor list-group-item" target="_blank" onclick="myFunction()"><img src="../img/logos/brillo-y-contraste-minblanco-min.png" alt="" class="" width="15" onclick="white()"></button>
+  </div>
+  
+
+
+    <!--Container y principal-->
+    <div class="container" id="contenido">
+        <main>
+
+          <div class="row p-5 mt-5 text-center ">
+            <div class="col-sm-12 col-md-6 col-lg-6 m-auto text-center">
+              <h2>RECOLECCIÓN | APROVECHAMIENTO</h2>
+            </div>
+          </div>
+
+          <div class="row p-3 mt-3 text-center ">
+            <div class="col">
+              <img src="../img/ImagenesRecoleccion/Reco_Imagen0-min.jpg" class="rounded-4 w-75" alt="..." height="500">
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row p-3 mt-3 text-center ">
+            <div class="col">
+              <h2>Los materiales que recolectamos</h2>
+            </div>
+          </div>
+
+          <div class="row pt-5">
+            <div id="carouselExampleCaptions" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active carruselacomodado">
+                  <img src="../img/ImagenesRecoleccion/Reco_Imagen1-min.jpg" class="d-block w-30 rounded-4" alt="..." width="450" height="360">
+                  <div class="carousel-caption d-none d-md-block text-primary textoacomodado">
+                    <div class="row">
+                      <div class="col text-dark">
+                        <h3 class="fw-bold">MADERA</h3>
+                          <ul class="list-group list-group-flush row p-4 mt-4 rounded-4">
+                            <li class="list-group-item CambioColor1">Estibas</li>
+                            <li class="list-group-item CambioColor1">Tablas</li>
+                            <li class="list-group-item CambioColor1">Tablones</li>
+                            <li class="list-group-item CambioColor1">Madera de diferente medida</li>
+                          </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item carruselacomodado">
+                  <img src="../img/ImagenesRecoleccion/Reco_Imagen2-min.jpg" class="d-block w-30 rounded-4" alt="..."  width="450" height="360">
+                  <div class="carousel-caption d-none d-md-block text-primary textoacomodado">
+                      <div class="row">
+                          <div class="col text-dark">
+                            <h3 class="fw-bold">PLÁSTICO</h3>
+                              <ul class="list-group list-group-flush row p-4 mt-4 rounded-4">
+                                <li class="list-group-item CambioColor1">Retal</li>
+                                <li class="list-group-item CambioColor1">Tapas</li>
+                                <li class="list-group-item CambioColor1">Bolsa</li>
+                                <li class="list-group-item CambioColor1">Botellas</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="carousel-item carruselacomodado">
+                  <img src="../img/ImagenesRecoleccion/Reco_Imagen3-min.jpg" class="d-block w-30 rounded-4" alt="..." width="450" height="360">
+                  <div class="carousel-caption d-none d-md-block text-primary textoacomodado">
+                      <div class="row">
+                          <div class="col text-dark">
+                            <h3 class="fw-bold">CARTÓN</h3>
+                              <ul class="list-group list-group-flush row p-4 mt-4 rounded-4">
+                                <li class="list-group-item CambioColor1">Plegadiza</li>
+                                <li class="list-group-item CambioColor1">Láminas de cartón</li>
+                                <li class="list-group-item CambioColor1">Cajas de diferentes tamaños</li>
+                                <li class="list-group-item CambioColor1">Tetra Pack</li>
+                                <li class="list-group-item CambioColor1">Polyboard</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="carousel-item carruselacomodado">
+                  <img src="../img/ImagenesRecoleccion/Reco_Imagen4-min.jpg" class="d-block w-30 rounded-4" alt="..." width="450" height="360">
+                  <div class="carousel-caption d-none d-md-block text-primary textoacomodado">
+                      <div class="row">
+                          <div class="col text-dark">
+                            <h3 class="fw-bold">PAPEL</h3>
+                              <ul class="list-group list-group-flush row p-4 mt-4 rounded-4">
+                                <li class="list-group-item CambioColor1">Archivo</li>
+                                <li class="list-group-item CambioColor1">Periódico</li>
+                                <li class="list-group-item CambioColor1">Kraft</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="carousel-item carruselacomodado">
+                  <img src="../img/ImagenesRecoleccion/Reco_Imagen5-min.jpg" class="d-block w-30 rounded-4" alt="..." width="450" height="360">
+                  <div class="carousel-caption d-none d-md-block text-primary textoacomodado">
+                      <div class="row">
+                          <div class="col text-dark">
+                            <h3 class="fw-bold">MATERIAL METÁLICO</h3>
+                              <ul class="list-group list-group-flush row p-4 mt-4 rounded-4">
+                                <li class="list-group-item">Aluminio</li>
+                                <li class="list-group-item">Hierro</li>
+                                <li class="list-group-item">Otros</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
+                <span class="visually-hidden text-bg-dark">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row p-3 mt-3 text-center ">
+            <div class="col">
+              <h2>PROCESO DE RECUPERACION DE MATERIALES</h2>
+            </div>
+          </div>
+
+          <div class="row p-5 mt-5 text-center colorgeneral CambioColor">
+            <div class="row text-center">
+              <div class="col-sm-12 col-md-6 col-lg-3 m-auto">
+                <div class="card rounded-4 CambioColor1" style="width: 18rem;">
+                  <img src="../img/ImagenesRecoleccion/Recoleccion1.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Recoleccion</h5>
+                    <p class="card-text">Es una de las partes mas interesantes y curiosas del proceso porque no sabemos que nos vamos a encontrar                    
+                      </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3 m-auto">
+                <div class="card rounded-4 CambioColor1" style="width: 18rem;">
+                  <img src="../img/ImagenesRecoleccion/Recoleccion2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Transporte</h5>
+                    <p class="card-text">Dichos materiales encontrados los llevamos a una de nuestras sedes en la cual poder iniciar el proceso de recuperacion</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3 m-auto">
+                <div class="card rounded-4 CambioColor1" style="width: 18rem;">
+                  <img src="../img/ImagenesRecoleccion/Recoleccion3.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Recuperacion y Reincoporacion</h5>
+                    <p class="card-text">Porceso el cual se hace limpieza del material y eliminacion de partes dañadas</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row p-5 mt-5 text-center colorgeneral CambioColor">
+            <div class="row text-center">
+              <div class="col-sm-12 col-md-6 col-lg-3 m-auto">
+                <div class="card rounded-4 CambioColor1" style="width: 18rem;">
+                  <img src="../img/ImagenesRecoleccion/Recoleccion4.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Aprovechamiento</h5>
+                    <p class="card-text">Parte donde se mira el que hacer con dichos materiales, de como darles una nueva vida y se util para las personas</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3 m-auto">
+                <div class="card rounded-4 CambioColor1" style="width: 18rem;">
+                  <img src="../img/ImagenesRecoleccion/Recoleccion5.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Montaje</h5>
+                    <p class="card-text">Proceso donde ya teniendo una idea clara se lleva acabo, se arma, pinta, se deja reluciente para la venta</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3 m-auto">
+                <div class="card rounded-4 CambioColor1" style="width: 18rem;">
+                  <img src="../img/ImagenesRecoleccion/Recoleccion6.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Venta</h5>
+                    <p class="card-text">Es nuestro proceso final para nosotros, pero el inicio de una utilidad para nuestros productos</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </main>
+    </div>
+
+  
+
+    <footer class="footer mt-5 rounded-top-3 pt-3 pb-3">
+      <div class="container-fluid">
+          <div class="row text-center pt-3">
+              <div class="col-sm-12 col-md-6 col-lg-2">
+                  <a href="https://www.facebook.com/RSavillaSASBIC"><img src="../img/logos/facebook-min.png" class="img-fluid" alt="..." width="80" height="100"></a> 
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-2">
+                <a href="https://www.instagram.com/r.savillasas/"><img src="../img/logos/instagram-min.png" class="img-fluid" alt="..." width="80" height="100"></a> 
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-2">
+                <a href="https://www.linkedin.com/404/"><img src="../img/logos/linkedin-min.png" class="img-fluid" alt="..."width="80" height="100"> </a> 
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                  <p>
+                      Medios de contacto <br> 
+                      <img src="../img/logos/logotipo-de-gmail-min.png" alt="img-fluid" width="20" height="20"> reciclajesavilla@hotmail.com<br>
+                      <img src="../img/logos/llamada-telefonica-min.png" alt="img-fluid" width="20" height="20"> +57 3508382046
+                  </p>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                  <p>
+                      Nuestras Sedes <br>
+                      Patio Bonito Cra 86B # 42-06 Sur <br>
+                  </p>
+              </div>
+          </div>
+
+        </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+ <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+ <script src="../bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
